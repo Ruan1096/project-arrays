@@ -1,5 +1,6 @@
 const list = document.querySelector('ul')
 const buttonshowAll = document.querySelector('.show-all')
+const buttonMapAll = document.querySelector('.map-all')
 let myLi = ''
 
 function showAll() {
@@ -15,5 +16,13 @@ function showAll() {
 
 list.innerHTML = myLi
 }
+function mapAllItems() { 
+    const newPrice = menuOptions.map ((products) => ({
+        name: products.name,
+        price: products.price * 0.9,
+        src: products.src
+    }))
+}   
 
 buttonshowAll.addEventListener('click', showAll)
+buttonMapAll.addEventListener('click', mapAllItems)
