@@ -2,6 +2,15 @@ const list = document.querySelector('ul')
 const buttonshowAll = document.querySelector('.show-all')
 const buttonMapAll = document.querySelector('.map-all')
 const sumAll = document.querySelector('.sum-all')   
+const filterAll = document.querySelector('.filter-all')
+
+
+
+function foratcurrency(value) {
+    const newValue =  value.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL', })
+    return newValue
+}
+
 
 
 function showAll( productsArray ) {
@@ -14,7 +23,7 @@ function showAll( productsArray ) {
             <li>
                 <img src="${product.src}" alt="${product.name}">
                 <p>${product.name}</p>
-                <p class="inten-price">${product.price}</p>
+                <p class="inten-price">${foratcurrency(product.price)}</p>
             </li> 
             `       
 })
@@ -41,13 +50,20 @@ function mapAllItems() {
              `
             <li>
                 
-                <p>O valor total dos itens é: R$ ${totalvalve}</p>
+                <p>O valor total dos itens é: R$ ${foratcurrency(totalvalve)}</p>
                 
-            </li> 
-            `      }
+            </li>             `     
+ }
+ function filterAllItems() {
+    const filterJustVegan = menuOptions.filter((products) => products.vegan === true)
+
+    showAll(filterJustVegan)
+ }
+
 
 
 
 buttonshowAll.addEventListener('click', () => showAll(menuOptions))
 buttonMapAll.addEventListener('click', mapAllItems)
 sumAll.addEventListener('click', sumAllItems)
+filterAll.addEventListener('click', filterAllItems)
