@@ -1,7 +1,4 @@
-O Gemini disse
-Com certeza! Para um README.md profissional no GitHub, o segredo é ser detalhado o suficiente para que outro desenvolvedor (ou um recrutador) entenda sua linha de raciocínio e as ferramentas que você domina.
 
-Aqui está a descrição completa e detalhada:
 
 🍔 DevClub Burger - Conversor e Filtro de Cardápio
 Este projeto é uma aplicação web interativa que simula o gerenciamento de um cardápio de hamburgueria. O foco principal foi o desenvolvimento de lógica de programação em JavaScript Vanilla, explorando a manipulação dinâmica do DOM e o uso estratégico de métodos de array para processar dados.
