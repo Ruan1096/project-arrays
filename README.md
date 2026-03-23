@@ -5,7 +5,7 @@ Este projeto é uma aplicação web interativa que simula o gerenciamento de um 
 
 🛠️ Tecnologias e Ferramentas Utilizadas
 1. HTML5 (Estruturação)
-Tags Semânticas: Uso de <ul> e <li> para listagem de produtos.
+Tags Semânticas: Uso de  e  para listagem de produtos.
 
 Interatividade: Criação de botões (button) com classes específicas para gatilhos de eventos.
 
