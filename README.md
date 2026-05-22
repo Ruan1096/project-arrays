@@ -1,6 +1,6 @@
 
 
-🍔 DevClub Burger - Conversor e Filtro de Cardápio
+🍔 Dev Burger - Conversor e Filtro de Cardápio.
 Este projeto é uma aplicação web interativa que simula o gerenciamento de um cardápio de hamburgueria. O foco principal foi o desenvolvimento de lógica de programação em JavaScript Vanilla, explorando a manipulação dinâmica do DOM e o uso estratégico de métodos de array para processar dados.
 
 🛠️ Tecnologias e Ferramentas Utilizadas
